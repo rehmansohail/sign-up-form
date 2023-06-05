@@ -11,3 +11,12 @@ function validatePassword() {
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
+const button = document.getElementById('myButton');
+
+button.addEventListener('click', function() {
+  button.classList.add('button-animation');
+  setTimeout(function() {
+    button.classList.remove('button-animation');
+  }, 500);
+});
