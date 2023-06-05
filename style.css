@@ -25,7 +25,33 @@ body {
   .left_content img{
     width: 70px;
   }
-  
+
+  .right_content{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .header{
+    background-color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
+
+  }
+  .details{
+    display: flex;
+  }
+
+  .form{
+    background-color: gainsboro;
+    height: 70vh;
+  }
+  .form .text{
+    color: black;
+    margin: 20px;
+  }
   #container1 {
     
     height: 100vh;
@@ -46,3 +72,74 @@ body {
     height: 100vh;
     flex-grow: 1;
   }
+
+  .form-group {
+    margin: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"] {
+    width: 200px;
+    height: 30px;
+  }
+  .name{
+    display: flex;
+  }
+  .contact{
+    display: flex;
+  }
+  .passw{
+    display: flex;
+  }
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .form-row label {
+    width: 120px;
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .form-row input {
+    width: 200px;
+    height: 30px;
+  }
+
+  .submit-button {
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+  .button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    border: none;
+    
+  }
+
+  
+  
+  .left-row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  input {
+    border: 2px solid #000;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  

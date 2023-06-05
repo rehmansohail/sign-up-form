@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Sign-up</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,8 +12,58 @@
         <div class="left_content"><img src="./images/odin-lined.png" alt="Logo">ODIN</div>
     </div>
     <div class="container" id="container2">
-Hey man
 
+     <div class="right_content">
+        <div class="header"> 
+            <p class="para1">This is not a real online service! You know you need something like this in your life
+                to help you realise your deepest dreams. Sign up now.
+            </p>
+            <p class="para2">You know you want to.</p>
+
+        </div>
+        <div class="form">
+            <h2 class="text">Lets do this</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <div class="left-row">
+                  <div class="form-row">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Alice" required>
+                  </div>
+            
+                  <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="abc@xyz" required>
+                  </div>
+            
+                  <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password" required>
+                  </div>
+                </div>
+            
+                <div class="form-row">
+                  <label for="last_name">Last Name:</label>
+                  <input type="text" name="last_name" id="last_name" placeholder="Jones" required>
+                </div>
+            
+                <div class="form-row">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+                </div>
+            
+                <div class="form-row">
+                  <label for="confirm-password">Confirm Password:</label>
+                  <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+            
+                <div class="submit-button">
+                  <button type="submit" class="button">Submit</button>
+                </div>
+              </form>
+        </div>
+
+     </div>
     </div>
+    <script src="./logic.js"></script>
 </body>
 </html>
